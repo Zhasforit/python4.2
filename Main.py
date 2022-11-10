@@ -28,7 +28,7 @@ class Main(QDialog):
         for i in range(len(text2)):
             if text2[i] == " ":
                 vyrez.append(0)
-            if text2[i] == "\n":
+            if text2[i] == "\n" and text2[i-1] != "\n":
                 vyrez.append(1)
         vyrez.append(1)
         txt = text.split()
